@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.repository.UserMapper">
+
+	<select id="search" resultType="com.example.demo.entity.User">
+		SELECT * FROM testuser WHERE id =
+		#{id}
+	</select>
+
+	<insert id="insertOne">
+		insert into testuser (
+		name,
+		address,
+		phone
+		)
+		values (
+		#{name},
+		#{address},
+		#{phone}
+		)
+	</insert>
+
+</mapper>

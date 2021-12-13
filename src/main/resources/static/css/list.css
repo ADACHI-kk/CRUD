@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body {
+  width: 90%;
+  margin: 0 50px;
+}
+table{
+    border-collapse: collapse;
+  	font-size: 12px;
+  	margin-bottom: 50px;
+}
+table th, table td {
+	width: 500px;
+    border: 1px solid #ddd;
+    padding: 6px;
+}
+table th {
+  background-color: #F2F2F2;
+  width: 30%;
+}
+
+.center {
+  text-align: center;
+}
+.create_title {
+	font-size: 20px;
+}
