@@ -12,10 +12,12 @@
 	<form th:method="post" th:object="${user}"
 		th:action="@{/user/register}">
 
-		<label>名前(VARCHAR):<input type="text" th:field="*{name}"></label><br>
-		<label>住所(VARCHAR):<input type="text" th:field="*{address}"></label><br>
-		<label>電話番号(VARCHAR):<input type="text" th:field="*{phone}"></label><br>
-		
+		<div class="set_table">
+			<label>名前(VARCHAR):<input type="text" th:field="*{name}"></label><br>
+			<label>住所(VARCHAR):<input type="text" th:field="*{address}"></label><br>
+			<label>電話番号(VARCHAR):<input type="text" th:field="*{phone}"></label><br>
+		</div>
+
 		<button style="width: 100px; margin: 15px 0;">新規作成</button>
 
 	</form>
