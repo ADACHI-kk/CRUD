@@ -13,11 +13,26 @@ public class UserService {
     @Autowired
     private UserMapper userMapper;
     
+    //read
     public User search(UserSearchRequest userSearchRequest) {
         return userMapper.search(userSearchRequest);
     }
     
+    //insert
     public void insertOne(User u) {
         userMapper.insertOne(u);
+    }
+    
+    //update
+    public void updateName(User u) {
+    	userMapper.updateName(u);
+    }
+    
+    public void updateAddress(User u) {
+    	userMapper.updateAddress(u);
+    }
+    
+    public void updatePhone(User u) {
+    	userMapper.updatePhone(u);
     }
 }

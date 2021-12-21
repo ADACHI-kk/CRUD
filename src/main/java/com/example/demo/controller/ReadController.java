@@ -51,4 +51,10 @@ public class ReadController {
 		userService.insertOne(u);
 		return "redirect:/user/search";
 	}
+	
+	@GetMapping("/user/update")
+	public String updateUser(Model model, @ModelAttribute User u) {
+		model.addAttribute("user", u);
+		return "user/update";
+	}
 }

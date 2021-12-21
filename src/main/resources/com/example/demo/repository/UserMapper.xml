@@ -21,5 +21,18 @@
 		#{phone}
 		)
 	</insert>
+	
+	<update id="updateName">
+		update testuser
+		set name=#{name} where id='#{id}'
+	</update>
+	<update id="updateAddress">
+		update testuser
+		set address=#{address} where id='#{id}'
+	</update>
+	<update id="updatePhone">
+		update testuser
+		set phone=#{phone} where id='#{id}'
+	</update>
 
 </mapper>

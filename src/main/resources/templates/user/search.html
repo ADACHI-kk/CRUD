@@ -36,8 +36,12 @@
         </table>
     </div>
     
-    <a class= "register" th:href="@{/user/register}" style= "width: 100%;"><!-- URL「/users/register」生成 -->
+    <a class= "register" th:href="@{/user/register}" style= "width: 100%;">
         <button>新しいユーザーを登録</button>
+    </a>
+    
+    <a class="update" th:href="@{/user/update}" style="width:100%">
+    	<button>ユーザー情報の更新</button>
     </a>
     
 </body>

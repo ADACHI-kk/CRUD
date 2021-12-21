@@ -17,4 +17,11 @@ public interface UserMapper {
     
     //insert
     public void insertOne(User u);
+    
+    //update
+    public void updateName(User u);
+    
+    public void updateAddress(User u);
+    
+    public void updatePhone(User u);
 }
