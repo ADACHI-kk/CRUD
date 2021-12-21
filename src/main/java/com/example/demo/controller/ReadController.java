@@ -53,19 +53,37 @@ public class ReadController {
 		return "redirect:/user/search";
 	}
 	
-	//ユーザー情報の更新
+	//ユーザー情報の更新フォーム
 	@GetMapping("/user/update")
 	public String updateUser(Model model, @ModelAttribute User u) {
 		model.addAttribute("user", u);
 		return "user/update";
 	}
-	
+	//名前の更新
 	@PostMapping("/user/updateName")
 	public String updateName(@Validated @ModelAttribute User u, BindingResult result) {
 		if (result.hasErrors()) {
 			return "user/update";
 		}
 		userService.updateName(u);
+		return "redirect:/user/update";
+	}
+	//住所の更新
+	@PostMapping("/user/updateAddress")
+	public String updateAddress(@Validated @ModelAttribute User u, BindingResult result) {
+		if (result.hasErrors()) {
+			return "user/update";
+		}
+		userService.updateAddress(u);
+		return "redirect:/user/update";
+	}
+	//電話番号の更新
+	@PostMapping("/user/updatePhone")
+	public String updatePhone(@Validated @ModelAttribute User u, BindingResult result) {
+		if (result.hasErrors()) {
+			return "user/update";
+		}
+		userService.updatePhone(u);
 		return "redirect:/user/update";
 	}
 }
