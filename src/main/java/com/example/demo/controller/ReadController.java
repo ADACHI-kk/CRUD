@@ -84,6 +84,6 @@ public class ReadController {
 			return "user/update";
 		}
 		userService.updatePhone(u);
-		return "redirect:/user/update";
+		return "redirect:/user/search";
 	}
 }
