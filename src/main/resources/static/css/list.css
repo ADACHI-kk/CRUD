@@ -3,6 +3,7 @@
 body {
   width: 90%;
   margin: 0 50px;
+  background-color: #dcdcdc;
 }
 table{
     border-collapse: collapse;
@@ -11,11 +12,12 @@ table{
 }
 table th, table td {
 	width: 500px;
-    border: 1px solid #ddd;
+    border: 1px solid #faebd7;
     padding: 6px;
+    background-color: white;
 }
 table th {
-  background-color: #F2F2F2;
+  background-color: pink;
   width: 30%;
 }
 
