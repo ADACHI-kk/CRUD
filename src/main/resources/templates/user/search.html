@@ -35,14 +35,16 @@
             </tr>
         </table>
     </div>
-    
-    <a class= "register" th:href="@{/user/register}" style= "width: 100%;">
-        <button>新しいユーザーを登録</button>
-    </a>
-    <br>
-    <a class="update" th:href="@{/user/update}">
-    	<button>ユーザー情報の更新</button>
-    </a>
+    <div class= "form_container">
+    	<a class= "register" th:href="@{/user/register}" style= "width: 100%;">
+        	<button>新しいユーザーを登録</button>
+    	</a>
+    </div>
+    <div class= "form_container">
+    	<a class="update" th:href="@{/user/update}">
+    		<button>ユーザー情報の更新</button>
+    	</a>
+    </div>
     
 </body>
 </html>

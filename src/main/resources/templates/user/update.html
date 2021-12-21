@@ -7,9 +7,9 @@
 </head>
 <body>
 	<h2>ユーザー情報の更新</h2>
-	<form th:method="post" th:action="@{/user/updateName}">
+	<form th:method="post" th:action="@{/user/updateName}" th:object="${user}">
 		<div>
-			<label>ID：<input type="text" th:field="*{id}" size="40" /></label> <label
+			<label>ID：<input type="text" th:field="*{id}" /></label> <label
 				class="table">名前:<input type="text" th:field="*{name}">
 			</label>
 		</div>
@@ -17,18 +17,18 @@
 	</form>
 	<br>
 
-	<form th:method="post" th:action="@{/user/updateAddress}">
+	<form th:method="post" th:action="@{/user/updateAddress}" th:object="${user}">
 		<div>
-			<label>ID：<input type="text" th:field="*{id}" size="40" /></label> <label
+			<label>ID：<input type="text" th:field="*{id}" /></label> <label
 				class="table">住所:<input type="text" th:field="*{address}"></label>
 		</div>
 		<button>住所の更新</button>
 	</form>
 	<br>
 
-	<form th:method="post" th:action="@{/user/updatePhone}">
+	<form th:method="post" th:action="@{/user/updatePhone}" th:object="${user}">
 		<div>
-			<label>ID：<input type="text" th:field="*{id}" size="40" /></label> <label
+			<label>ID：<input type="text" th:field="*{id}" /></label> <label
 				class="table">電話番号:<input type="text" th:field="*{phone}"></label>
 		</div>
 		<button>電話番号の更新</button>
