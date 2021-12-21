@@ -10,9 +10,9 @@ button {
 	margin: 15px 0;
 }
 
-a {
-	width: 250px;
-	height: 50px;
+.home_btn {
+	margin-top: 30px;
+	size: 300px;
 	font-size: 5px;
-	background-color: #40e0d0;
+	background-color: #ffa07a;
 }
