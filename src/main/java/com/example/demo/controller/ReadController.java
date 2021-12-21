@@ -37,6 +37,7 @@ public class ReadController {
 		return "user/search";
 	}
 	
+	//ユーザー登録
 	@GetMapping("/user/register")
     public String registerUser(Model model, @ModelAttribute User u) {
         model.addAttribute("user", u);
@@ -52,6 +53,7 @@ public class ReadController {
 		return "redirect:/user/search";
 	}
 	
+	//ユーザー情報の更新
 	@GetMapping("/user/update")
 	public String updateUser(Model model, @ModelAttribute User u) {
 		model.addAttribute("user", u);
