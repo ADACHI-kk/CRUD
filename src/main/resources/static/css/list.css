@@ -12,12 +12,12 @@ table{
 }
 table th, table td {
 	width: 500px;
-    border: 1px solid #faebd7;
+    border: 1px solid #708090;
     padding: 6px;
     background-color: white;
 }
 table th {
-  background-color: pink;
+  background-color: #ffcabf;
   width: 30%;
 }
 
