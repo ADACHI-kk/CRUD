@@ -59,4 +59,13 @@ public class ReadController {
 		model.addAttribute("user", u);
 		return "user/update";
 	}
+	
+	@PostMapping("/user/updateName")
+	public String updateName(@Validated @ModelAttribute User u, BindingResult result) {
+		if (result.hasErrors()) {
+			return "user/update";
+		}
+		userService.updateName(u);
+		return "redirect:/user/update";
+	}
 }

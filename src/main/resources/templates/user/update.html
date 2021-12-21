@@ -7,5 +7,24 @@
 </head>
 <body>
 	<h2>ユーザー情報の更新</h2>
+	<form th:method="post" th:action="@{/user/updateName}">
+		<div>
+			<label class= "table">名前:<input type="text" th:field="*{name}"></label><br>
+		</div>
+	</form>
+	<br>
+	
+	<form th:method="post" th:action="@{/user/updateAddress}">
+		<div>
+			<label class= "table">住所:<input type="text" th:field="*{address}"></label><br>
+		</div>
+	</form>
+	<br>
+	
+	<form th:method="post" th:action="@{/user/updatePhone}">
+		<div>
+			<label class= "table">電話番号:<input type="text" th:field="*{phone}"></label><br>
+		</div>
+	</form>
 </body>
 </html>
