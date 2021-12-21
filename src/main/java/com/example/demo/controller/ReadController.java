@@ -66,7 +66,7 @@ public class ReadController {
 			return "user/update";
 		}
 		userService.updateName(u);
-		return "redirect:/user/update";
+		return "redirect:/user/search";
 	}
 	//住所の更新
 	@PostMapping("/user/updateAddress")
@@ -75,7 +75,7 @@ public class ReadController {
 			return "user/update";
 		}
 		userService.updateAddress(u);
-		return "redirect:/user/update";
+		return "redirect:/user/search";
 	}
 	//電話番号の更新
 	@PostMapping("/user/updatePhone")
