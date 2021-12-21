@@ -28,9 +28,6 @@ public class ReadController {
 
 	/**
 	 * ユーザー情報検索
-	 * 
-	 * @param userSearchRequest リクエストデータ
-	 * @param model             Model
 	 * @return ユーザー情報一覧画面
 	 */
 	@RequestMapping(value = "/user/id_search", method = RequestMethod.POST)
