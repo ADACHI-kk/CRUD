@@ -94,11 +94,11 @@ public class ReadController {
 		return "user/delete";
 	}
 	@PostMapping("/user/deleteUser")
-	public String userDelete(@Validated @ModelAttribute UserSearchRequest userSearchRequest, BindingResult result) {
+	public String userDelete(@Validated @ModelAttribute User u, BindingResult result) {
 		if (result.hasErrors()) {
 			return "user/delete";
 		}
-		userService.deleteOne(userSearchRequest);
+		userService.deleteOne(u);
 		return "redirect:/user/search";
 	}
 }

@@ -37,7 +37,7 @@ public class UserService {
     }
     
     //delete
-    public void deleteOne(UserSearchRequest userSearchRequest) {
-    	userMapper.deleteOne(userSearchRequest);
+    public void deleteOne(User u) {
+    	userMapper.deleteOne(u);
     }
 }

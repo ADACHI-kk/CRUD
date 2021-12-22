@@ -26,5 +26,5 @@ public interface UserMapper {
     public void updatePhone(User u);
     
     //delete
-    User deleteOne(UserSearchRequest user);
+    public void deleteOne(User u);
 }
