@@ -37,7 +37,7 @@
 	
 	<delete id="deleteOne">
 		delete form testuser
-		where id=#{id}
+		where id=#{id};
 	</delete>
 
 </mapper>
