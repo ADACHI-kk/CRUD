@@ -36,8 +36,8 @@
 	</update>
 	
 	<delete id="deleteOne">
-		delete form testuser
-		where id=#{id};
+		delete from testuser
+		where id=#{id}
 	</delete>
 
 </mapper>
