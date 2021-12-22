@@ -35,4 +35,9 @@ public class UserService {
     public void updatePhone(User u) {
     	userMapper.updatePhone(u);
     }
+    
+    //delete
+    public void deleteOne(User u) {
+    	userMapper.deleteOne(u);
+    }
 }

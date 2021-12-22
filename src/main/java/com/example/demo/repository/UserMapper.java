@@ -24,4 +24,7 @@ public interface UserMapper {
     public void updateAddress(User u);
     
     public void updatePhone(User u);
+    
+    //delete
+    public void deleteOne(User u);
 }

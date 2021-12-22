@@ -86,4 +86,19 @@ public class ReadController {
 		userService.updatePhone(u);
 		return "redirect:/user/search";
 	}
+	
+	//ユーザー削除
+	@GetMapping("/user/delete")
+	public String deleteUser(Model model, @ModelAttribute User u) {
+		model.addAttribute("user", u);
+		return "user/delete";
+	}
+	@PostMapping("/user/deleteUser")
+	public String userDelete(@Validated @ModelAttribute User u, BindingResult result) {
+		if (result.hasErrors()) {
+			return "user/delete";
+		}
+		userService.deleteOne(u);
+		return "redirect:/user/search";
+	}
 }

@@ -34,5 +34,10 @@
 		update testuser
 		set phone=#{phone} where id=#{id}
 	</update>
+	
+	<delete id="deleteOne">
+		delete form testuser
+		where id=#{id}
+	</delete>
 
 </mapper>

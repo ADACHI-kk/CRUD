@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Delete User</title>
+<link href="/css/delete.css" rel="stylesheet"></link>
+</head>
+<body>
+<h2>ユーザーの削除</h2>
+	<p>削除したいユーザーのIDを入力してください</p>
+	<form th:method="post" th:action="@{/user/deleteUser}" th:object="${user}">
+		<div>
+			<label>ID：<input type="text" th:field="*{id}" /></label>
+		</div>
+		<button>Delete User</button>
+	</form>
+</body>
+</html>
